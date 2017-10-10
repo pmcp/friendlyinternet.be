@@ -2,29 +2,25 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700';
 
-
 .main {
-    top: 0;
-  // position: fixed;
-  -webkit-transform: translate3d(0, 0, 0); 
-     transform: translate3d(0, 0, 0) ;
-       
-       
-  z-index:-1;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: -1;
   width: 100%;
   padding-top: 10vw;
 }
-.text {
 
+.text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
-position: relative;
-  // top: 40vh;
+  position: relative;
 }
+
 h2 {
   font-family: Cutive Mono;
   padding: 2em 0 0 0;
@@ -37,15 +33,7 @@ p {
   font-size: 1em;
 }
 
-
-@mixin max-width($width) {
-  @media screen and (max-width: $width) {
-    @content;
-  }
-}
-
 .container {
-  // max-width: 100%;
   font-family: Cutive Mono;
   flex-flow: row wrap;
   padding: 0;
@@ -56,25 +44,22 @@ p {
   text-align: center;
 }
 
-@include max-width(5000px) {
+@media screen and (max-width: 5000px) {
   .item {
     flex-basis: 9vw;
     font-size: 4vw;
-        line-height: 10vw;
+    line-height: 10vw;
   }
 }
-
-@include max-width(980px) {
+@media screen and (max-width: 980px) {
   .item {
     flex-basis: 23vw;
     font-size: 8vw;
     line-height: 20vw;
   }
 }
-
 .home-heart-container {
   margin: 0 auto;
-  // transform: translate(46%, 60px);
 }
 
 #heart {
